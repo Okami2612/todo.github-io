@@ -40,6 +40,7 @@ body{
     cursor: pointer;
     border-radius: 5px;
     border: none;
+    margin-top: 15px;
 }
 .btn:hover{
     transform: scale(0.98);
@@ -67,6 +68,7 @@ body{
     font-weight: bold;
     color: #e57373;
     cursor: pointer;
+    margin-left: 30px;
 }
 /* Sidebar form */
 .sidebar-form .sidebar-control{
@@ -88,6 +90,7 @@ body{
 /* Sidebar list */
 .sidebar-list{
     padding: 1.6rem;
+    margin-top: 20px;
 }
 .sidebar-item{
     display: inline-flex;
@@ -164,8 +167,7 @@ body{
     gap: 20px;
     padding: 1.6rem;
 }
-.todo{
-    border-color: #333;
+.todo{    
     background-color: #fff;   
     color: var(--primary-color);
     border-top: 6px solid;
@@ -176,9 +178,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
 }
-.todo-tag{
-    background-color: rgba(0,0,0,.5);
-    color: #333;
+.todo-tag{    
     font-size: 1.6rem;
     padding: .5rem 2.5rem;
     border-radius: 5px;
