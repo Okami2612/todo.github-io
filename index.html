@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="app">
+        <aside class="sidebar">
+            <header class="header">
+                <h1 class="header-title">My Categories</h1>
+                <form action="" class="sidebar-form" data-new-category-form>
+                    <div class="form-control">
+                        <input type="text" placeholder="Enter Category" data-new-category-input>                        
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus" aria-hidden="true"></i> Add Category
+                    </button>
+                </form>
+                <ul class="sidebar-list" data-categories>
+                    <li class="sidebar-item">All Categories</li>
+                    <li class="sidebar-item">Work
+                        <input type="color" class="sidebar-color">
+                    </li>
+                    <li class="sidebar-item">Etc.
+                        <input type="color" class="sidebar-color">
+                    </li>
+                </ul>
+            </header>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <div>
+                    <h1 class="header-title">Welcome back, <strong>Developer studio</strong></h1>
+                    <div class="currently-viewing" data-currrently-viewing>You are currently viewing All Categories</div>
+                </div>
+                <!-- Create todo form -->
+                <form class="create-todo-form" data-new-todo-form>
+                    <div class="form-control">
+                        <select data-new-todo-select required>
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" data-new-todo-input placeholder="Enter Todo" required>                        
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus" aria-hidden="true"></i> Add Todo
+                    </button>
+                </form>                
+                <!-- Edit todo form -->
+                <form class="edit-todo-form" data-edit-todo-form>
+                    <div class="form-control">
+                        <select data-edit-todo-select required>
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" data-edit-todo-input placeholder="Enter Todo" required>                        
+                    </div>
+                    <button class="btn btn-primary">
+                        Save
+                    </button>
+                </form> 
+            </header>
+            <section class="todos-container" data-cards>
+                <div class="todo">
+                    <div class="todo-tag">
+                        Work
+                    </div>
+                    <p class="todo-description">
+                        Lorem ipsum dolor sit amet, consect
+                    </p>
+                    <div class="todo-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="todo">
+                    <div class="todo-tag">
+                        Work
+                    </div>
+                    <p class="todo-description">
+                        Lorem ipsum dolor sit amet, consect
+                    </p>
+                    <div class="todo-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="todo">
+                    <div class="todo-tag">
+                        Work
+                    </div>
+                    <p class="todo-description">
+                        Lorem ipsum dolor sit amet, consect
+                    </p>
+                    <div class="todo-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="todo">
+                    <div class="todo-tag">
+                        Work
+                    </div>
+                    <p class="todo-description">
+                        Lorem ipsum dolor sit amet, consect
+                        Lorem ipsum dolor sit amet, consect
+                        Lorem ipsum dolor sit amet, consect
+                    </p>
+                    <div class="todo-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="todo">
+                    <div class="todo-tag">
+                        Work
+                    </div>
+                    <p class="todo-description">
+                        Lorem ipsum dolor sit amet, consect
+                        Lorem ipsum dolor sit amet, consect
+                        Lorem ipsum dolor sit amet, consect
+                    </p>
+                    <div class="todo-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
